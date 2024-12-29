@@ -47,11 +47,6 @@ class SmartWatches : AppCompatActivity() {
                     val adapter = adapter(this@SmartWatches, watches)
                     smartList.adapter = adapter
                 } else {
-                    Toast.makeText(
-                        this@SmartWatches,
-                        "Failed to load data: ${response.code()}",
-                        Toast.LENGTH_LONG
-                    ).show()
                 }
             }
 
